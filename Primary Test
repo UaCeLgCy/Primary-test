@@ -44,6 +44,8 @@ fin = time.clock()
 t = (fin - debut) *10 #time to calculate
 
 print("calculé en ",t,"secondes")
+
+#python 3.4
         
 
 
