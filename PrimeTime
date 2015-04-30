@@ -1,0 +1,57 @@
+################################
+#Copyright © 4-30-2015 AAB/ghg5#
+#           OKLM               #
+################################
+
+
+
+#Primary test, verry simple
+
+import os
+
+import time
+
+from random import *
+
+from math import *
+
+
+
+debut = time.clock()
+
+a = float(input("Veuillez rentrer le nombre :"))
+
+k = float(input("avec combien de répétitions :"))
+
+A =floor(sqrt(a))
+
+print(A)
+i = 0
+
+
+while i <= k:
+    b = randrange(2,A+1)   
+    print(b)
+    if a % b == 0:
+        print(a, "n'est pas premier")#a is composite
+    else:
+        i = i+1
+
+print(a, "est probablement premier")#a is prime
+
+fin = time.clock()
+
+t = (fin - debut) *10 #time to calculate
+
+print("calculé en ",t,"secondes")
+        
+
+
+
+
+
+
+
+    
+
+
